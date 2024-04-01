@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="./bip39-english.js"></script>
+    <script src="./calculator.js"></script>
+    <script src="./dom.js"></script>
+    <link rel="stylesheet" href="./style.css"/>
+  </head>
+  <body>
+    <main>
+      <h1 style="font-size: 24px;">12th words finder (BIP39)</h1>
+      <div>
+        Do you know that you cannot freely choose the 12th word of a BIP39 seed phrase when you make 12-words mnemonic?
+        This tool finds all available candidates (with correct checksum) for the 12th word.
+      </div>
+      <div>
+        <textarea
+          placeholder="Write 11 words, separated with blank space."
+          oninput="onInput()">
+        </textarea>
+        <div class="validation display-none"></div>
+      </div>
+      <div class="result display-none">
+        <div class="title"></div>
+        <div class="list"></div>
+      </div>
+      <div>
+        <div>References:</div>
+        <ul>
+          <li><a href="https://github.com/bitcoin/bips/blob/master/bip-0039/english.txt" target="_blank">BIP-0039 English Words</a></li>
+          <li><a href="https://iancoleman.io/bip39/" target="_blank">https://iancoleman.io/bip39/</a></li>
+          <li><a href="https://www.blockplate.com/blogs/blockplate/how-a-seed-phrase-is-created" target="_blank">HOW A SEED PHRASE IS CREATED</a></li>
+        </ul>
+      </div>
+      <div>
+        <div>Find me on:</div>
+        <ul>
+          <li><a class="bitcoin-blog" href="https://btc.coinsect.io" target="_blank">
+            bitcoin blog
+          </a></li>
+          <li><a class="bitcoin-blog" href="https://x.com/CoinsectChris" target="_blank">
+            x.com/CoinsectChris
+          </a></li>
+        </ul>
+      </div>
+      <div class="warning-bottom">
+        <div>❗</div>
+        <div>
+          This type of tools must be an open source. If you don't know how to read the source code, you should never use this tool.<br>
+          <a href="https://github.com/kispi/bip39_checksum" target="_blank">https://github.com/kispi/bip39_checksum</a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
