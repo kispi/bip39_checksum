@@ -79,7 +79,3 @@ const run = async elevenWords => {
 
   return (await calculateCandidates(validWords))
 }
-
-run([
-  'abandon', 'abandon', 'above', 'admit', 'adult', 'addict', 'address', 'agree', 'accident', 'abuse', 'absurd',
-])
